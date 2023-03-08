@@ -1,4 +1,4 @@
-let userInput = prompt("Enter your choice:");
+var userInput = prompt("Enter your choice:");
         
 outPut = userInput.toLowerCase();
  
@@ -34,4 +34,10 @@ function playRound(playerSelection, computerSelection){
 const playerSelection = outPut;
 const computerSelection = getComputerChoice();
 
-playRound(playerSelection, computerSelection);
+function game(){
+    for(let i=0; i < 5; i++){ 
+        playRound(playerSelection,computerSelection);
+   }
+}
+
+game()
