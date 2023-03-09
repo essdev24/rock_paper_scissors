@@ -20,11 +20,15 @@ function playRound(playerSelection, computerSelection){
     }else if (playerSelection == "scissors" && computerSelection == "paper"){
 
         alert(`You have won ${playerSelection} cut ${computerSelection}`);
-
+            
     }else if (playerSelection == "paper" && computerSelection == "rock"){
+
         alert(`You have won ${playerSelection} covers ${computerSelection}`);
+
     }else if(playerSelection == computerSelection) {
+
         alert("Its a tie")
+        
     }else {
         alert(`You lost! ${computerSelection} beats ${playerSelection}`);
     }
